@@ -4,7 +4,22 @@ import daisyui from "daisyui";
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: [
+          "Inter",
+          "ui-sans-serif",
+          "system-ui",
+          "-apple-system",
+          "BlinkMacSystemFont",
+          "Segoe UI",
+          "Roboto",
+          "Helvetica Neue",
+          "Arial",
+          "sans-serif",
+        ],
+      },
+    },
   },
   plugins: [daisyui],
   daisyui: {
@@ -22,6 +37,7 @@ export default {
           success: "#36d399",
           warning: "#fbbd23",
           error: "#f87272",
+          fontFamily: "Inter, sans-serif",
         },
       },
       {
@@ -37,6 +53,7 @@ export default {
           success: "#36d399",
           warning: "#fbbd23",
           error: "#f87272",
+          fontFamily: "Inter, sans-serif",
         },
       },
     ],
