@@ -30,14 +30,28 @@ const Navbar = () => {
 
             {authUser && (
               <>
-                <Link to={"/profile"} className={`btn btn-sm gap-2`}>
-                  <User className="size-5" />
-                  <span className="hidden sm:inline">Profile</span>
+                <Link
+                  to={"/profile"}
+                  className="btn btn-sm btn-ghost hover:bg-base-200 rounded-full px-3 transition-all duration-300 flex items-center gap-2"
+                  aria-label="Profile">
+                  <div className="size-8 rounded-full bg-primary/10 flex items-center justify-center">
+                    <User className="size-4 text-primary" />
+                  </div>
+                  <span className="hidden sm:inline font-medium">
+                    My Profile
+                  </span>
                 </Link>
 
-                <button className="flex gap-2 items-center" onClick={logout}>
-                  <LogOut className="size-5" />
-                  <span className="hidden sm:inline">Logout</span>
+                <button
+                  onClick={logout}
+                  className="btn btn-sm btn-ghost hover:bg-error/10 rounded-full px-3 transition-all duration-300 flex items-center gap-2"
+                  aria-label="Logout">
+                  <div className="size-8 rounded-full bg-error/10 flex items-center justify-center">
+                    <LogOut className="size-4 text-error" />
+                  </div>
+                  <span className="hidden sm:inline font-medium text-error">
+                    Sign Out
+                  </span>
                 </button>
               </>
             )}

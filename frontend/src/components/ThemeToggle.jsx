@@ -45,7 +45,7 @@ const ThemeToggle = () => {
       </span>
 
       <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 text-xs px-2 py-1 rounded bg-base-300 opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap pointer-events-none">
-        Switch to {theme === "light" ? "dark" : "light"} mode
+        Switch to {theme === "light" ? "night" : "day"} mode
       </span>
     </button>
   );
